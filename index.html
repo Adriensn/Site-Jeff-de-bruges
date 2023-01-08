@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jeff de Bruges</title>
+        <link rel="stylesheet" href="Style.css">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Jeff de Bruges</h1>
+
+        <nav class="menu">
+
+                <ul class="link-menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Biographie</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+        <form class="search-menu">
+                <input class="input-texte" type="search" name="q" placeholder="Rechercher">
+			    <input class="btn-submit" type="submit" value="Lancer !">
+             
+        </form>
+    </nav>
+
+    
+    <div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="C:\Users\newbi\Documents\Travail Cours\Projet Snt\Images\logo.png" style="width: 100%; height:500px" />
+			<div class="text"><strong>LOGO DE LA MARQUE</strong></div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="C:\Users\newbi\Documents\Travail Cours\Projet Snt\Images\packaging.png" style="width: 100%;height:500px" />
+			<div class="text"><strong>BOITE DE CHOCOLAT</strong></div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="C:\Users\newbi\Documents\Travail Cours\Projet Snt\Images\Magasin.png" style="width: 100%;height:500px" />
+			<div class="text"><strong>MAGASIN JEFF DE BRUGES A VELIZY</strong></div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+     
+    <main>
+
+
+        <article>
+
+            <h2>Notre histoire</h2>
+
+            <p>Jeff de Bruges est une marque commerciale de confiseries et l'enseigne d'une entreprise
+                 de l'industrie agroalimentaire dont le siège est situé en France à Ferrières-en-Brie 
+                 en Seine-et-Marne. Les produits sont fabriqués en Belgique. Elle est dirigée par Philippe 
+                 Jambon, qui a fondé l'entreprise en 1986.</p>
+
+            <h3>Nos créations</h3>
+
+            <p>Jeff de Bruges produit en grande partie des chocolats et des confiseries, comme vous pouvez le voir ci-dessous,
+                 ils ont une grande diversité de produits que vous pouvez retrouver dans des boites composées
+                d'une vingtaine à une cinquantaine de confiseries.</p>
+
+            <img src="C:\Users\newbi\Documents\Travail Cours\Projet Snt\Images\list chocolat.png" alt="Logo">
+
+        </article>
+
+        <aside>
+			<h2>En relation</h2>
+			<ul class="liste-relation">
+				  <li><a href="#">Site de Jeff de bruges</a></li>
+				  <li><a href="#">Nos réseaux</a></li>
+                  <li><a href="#">Notre patreon</a></li>
+			</ul>
+      </aside>
+
+    </main>
+
+    <footer class="footer">
+        <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+      </footer>
+
+
+    </body>
+</html>
